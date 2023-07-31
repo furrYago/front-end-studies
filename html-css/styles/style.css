@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --main-color: #000000;
+    --secondary-color: #F6F6F6;
+    --highlight-color: #22D4FD;
+    --hover-color: #272727;
+
+    --main-font: 'Krona One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 2% 0 0 15%;
+}
+
+body {
+    box-sizing: border-box;
+    /* height: 100vh; */
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--highlight-color);
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu__link {
+    color: var(--highlight-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__image {
+    width: 50%;
+}
+
+.container__content__title {
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+}
+
+.container__content__text {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.container__content__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__content__links__title {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container__content__links__nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 21.5px 0;
+    width: 50%;
+    text-align: center;
+}
+
+.container__content__links__nav:hover {
+    background-color: var(--hover-color);
+}
+
+#kick {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 10%;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content {
+        width: auto;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
