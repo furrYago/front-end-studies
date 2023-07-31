@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font-color: white;
+    --secondary-font-color: #c0c0c0;
+    --fill-color: #167bf7;
+    --background-color: #00030c;
+    --font-family: 'Inter', 'sans-serif';
+    --title-font-weight: 700;
+    --main-font-weight: 400;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-font-color);
+}
+
+.container {
+    height: 100vh;
+}
+
+.principal {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__button {
+    background-color: var(--fill-color);
+    border-radius: 0.5rem;
+    padding: 1em;
+    color: var(--main-font-color);
+    font-family: var(--font-family);
+    font-weight: var(--main-font-weight);
+    text-decoration: none;
+}
