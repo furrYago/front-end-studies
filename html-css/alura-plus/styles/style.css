@@ -18,16 +18,24 @@
 body {
     background-color: var(--background-color);
     color: var(--main-font-color);
+    font-size: 16px;
+
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .principal {
     background-image: url("../assets/background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    font-family: var(--font-family);
+    font-weight: var(--title-font-weight);
+    font-size: ;
+    text-align: center;
 }
 
 .container__button {
@@ -35,7 +43,21 @@ body {
     border-radius: 0.5rem;
     padding: 1em;
     color: var(--main-font-color);
+    display: block;
     font-family: var(--font-family);
     font-weight: var(--main-font-weight);
+    text-align: center;
     text-decoration: none;
+}
+
+.transparent__button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.container__caution {
+    font-family: var(--font-family);
+    font-weight: var(--main-font-weight);
+    font-size: 0.75rem;
+    color: var(--secondary-font-color);
 }
