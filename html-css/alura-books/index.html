@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header>       
         <div class="container">
             <input type="checkbox" id="menu" class="container__button">
             <label for="menu">
@@ -54,6 +54,7 @@
 
         <section class="carousel">
             <h2 class="carousel__title">Últimos Lançamentos</h2>
+
             <div class="swiper">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
@@ -73,10 +74,84 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+
+            <div class="card">
+                <div class="card__description">
+                    <div class="description">
+                        <h3 class="description__title">Talvez você também se interesse por...</h3>
+                        <h2 class="description__subtitle">Angular 11 e Firebase</h2>
+                        <p class="description__text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="assets/Angular.svg" alt="Logo da framework Angular.">
+                </div>
+
+                <div class="card__buttons">
+                    <ul class="buttons">
+                        <li>
+                            <a class="button" href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos."></a>
+                        </li>
+                        <li>
+                            <a class="button" href="#"><img src="assets/Sacola.svg" alt="Meu carrinho."></a>
+                        </li>
+                    </ul>
+                    <a class="anchor" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <h2 class="carousel__title">Mais Vendidos</h2>
+
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/Lideranc╠ºa.svg" alt="Livro sobre Liderança em Design.">    
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/Javascript.svg" alt="Livro sobre JavaScript.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/Portugol.svg" alt="Livro sobre Portugol.">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__description">
+                    <div class="description">
+                        <img class="description__title__image" src="assets/Estrelinhas.svg" alt="5 estrelas.">
+                        <h3 class="description__title">Autora do Mês</h3>
+                        <h2 class="description__subtitle">Juliana Agarikov</h2>
+                        <p class="description__text">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img src="assets/Escritora.svg" alt="Escritora Juliana Angarikov.">
+                </div>
+
+                <div class="card__buttons">
+                    <ul class="buttons">
+                        <li>
+                            <a class="button" href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos."></a>
+                        </li>
+                        <li>
+                            <a class="button" href="#"><img src="assets/Sacola.svg" alt="Meu carrinho."></a>
+                        </li>
+                    </ul>
+                    <a class="anchor" href="#">Saiba mais</a>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p class="footer__text">Grupo Alura</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>

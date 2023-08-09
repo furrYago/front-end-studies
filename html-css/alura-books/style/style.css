@@ -17,3 +17,8 @@ body {
     font-family: var(--font-family);
     font-size: 1rem;
 }
+
+footer {
+    background-color: #F9F9F9;
+    padding: 1.5rem;
+}
