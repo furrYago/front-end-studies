@@ -47,7 +47,7 @@ header {
 
 .list__item__title {
     font-weight: 700;
-    color: var(--header-list-title-color);
+    color: var(--orange-text);
 }
 
 .list__item__link {
