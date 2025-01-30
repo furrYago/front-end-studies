@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotifoggers</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/assets/icons/favicon.png">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="src/styles/main-content.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,7 +23,7 @@
             <nav class="sidebar__navigation">
                 <div class="logo">
                     <a href="">
-                        <img src="assets/icons/logo-spotify.png" alt="Logo do Spotify.">
+                        <img src="src/assets/icons/logo-spotify.png" alt="Logo do Spotify.">
                     </a>
                 </div>
                 <div>
@@ -69,6 +72,32 @@
             </nav>
         </div>
     </div>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="fa fa-chevron-left"></button>
+                    <button class="fa fa-chevron-right"></button>
+                </div>
+                <div class="header__search">
+                    <img src="src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+            <nav class="sections">
+                <div class="sections__title">
+                    <h1>Boa tarde</h1>
+                </div>
+                <div class="sections__cards">
+                    <h2>Navegar por todas as seções</h2>
+                </div>
+            </nav>
+        </div>
+    </main>
     <footer>
         <div class="footer__text">
             <h1>TESTAR O PREMIUM DE GRAÇA</h1>
